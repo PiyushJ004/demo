@@ -19,7 +19,7 @@ public class DemoController {
 	DemoService demoService;
 
 	@RequestMapping(value = "demo/fetch", method = RequestMethod.GET, produces = "application/json")
-	public Map<String, Object> demoFetch(@RequestBody Map<String, Object> data) {
+	public Map<String, Object> demoFetch() {
 		return demoService.demoFetchService();
 	}
 }
